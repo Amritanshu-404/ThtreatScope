@@ -1,6 +1,6 @@
 # ThreatScope 🔍🛡️
 
-A lightweight, self-hosted threat intelligence platform that scans documents for suspicious keywords, visualizes threat data in real time, and generates actionable security reports—all without uploading your logs to the cloud.
+**ThreatScope** is a privacy-first document analysis platform that intelligently scans documents for suspicious keywords, detects potential threats, and generates insightful reports — all while keeping your data 100% local. Built for cybersecurity researchers, analysts, and IT professionals.
 
 ---
 
@@ -10,69 +10,70 @@ A lightweight, self-hosted threat intelligence platform that scans documents for
 
 ## 🚀 Key Features
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="150">
-        <img src="https://raw.githubusercontent.com/Amritanshu-404/ThtreatScope/main/assets/icons/dashboard.png" alt="Dashboard" width="64"/>
-        <h4>Centralized Dashboard</h4>
-        Intuitive UI displaying live threat alerts, scan summaries, and historical trends.
-      </td>
-      <td align="center" width="150">
-        <img src="https://raw.githubusercontent.com/Amritanshu-404/ThtreatScope/main/assets/icons/nolog.png" alt="No Log Download" width="64"/>
-        <h4>No Log Upload</h4>
-        All processing happens locally—your data never leaves your device.
-      </td>
-      <td align="center" width="150">
-        <img src="https://raw.githubusercontent.com/Amritanshu-404/ThtreatScope/main/assets/icons/report.png" alt="Report" width="64"/>
-        <h4>Automated Reports</h4>
-        Generate detailed, customizable PDFs highlighting identified risks and recommendations.
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/Amritanshu-404/ThtreatScope/main/assets/icons/auto.png" alt="Autonomous" width="64"/>
-        <h4>Autonomous Scanning</h4>
-        Schedule recurring scans and let the system detect threats without manual intervention.
-      </td>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/Amritanshu-404/ThtreatScope/main/assets/icons/vuln.png" alt="Vulnerability Tracking" width="64"/>
-        <h4>Live Vulnerability Feeds</h4>
-        Stay up-to-date with the latest CVEs and threat intelligence feeds.
-      </td>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/Amritanshu-404/ThtreatScope/main/assets/icons/ux.png" alt="UX" width="64"/>
-        <h4>Responsive UX</h4>
-        Built with modern web technologies for a smooth experience on desktop and mobile.
-      </td>
-    </tr>
-  </table>
-</div>
+- 📊 **Dashboard**  
+  Real-time insights, scan history, and security alerts — all from a centralized dashboard.
+
+- 🔒 **No Log Download**  
+  Data stays entirely on your device — no external uploads or tracking.
+
+- 📑 **Analysis & Report Generation**  
+  Automatically generate detailed, customizable threat reports from scanned documents.
+
+- 🤖 **Autonomous Scanning**  
+  Fully automated scanning and detection with minimal user intervention.
+
+- 📡 **Up-to-Date Vulnerability Tracking**  
+  Continuously updated keyword database tracks modern vulnerabilities and threat vectors.
+
+- 💻 **Enhanced User Experience**  
+  Clean, responsive UI built with modern frontend technologies for smooth navigation and clarity.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Vite, Tailwind CSS, HTML5, JavaScript  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **Reporting Engine:** HTML-to-PDF conversion (e.g., Puppeteer)
 
 ---
 
 ## 🔍 How It Works
 
-1. **Keyword Definition**  
-   Define a list of suspicious or threat-related keywords (e.g., “ransomware,” “data leak,” “SQLi”) in `config/keywords.json`.  
-2. **Document Ingestion**  
-   Upload or drop documents (PDF, TXT, DOCX) into the scan interface.  
-3. **Local Analysis**  
-   The Node.js backend uses fast text-matching algorithms to detect keywords.  
-4. **Visualization & Reporting**  
-   Results are plotted live in the front end and can be exported as a PDF report.
+1. Upload a document (PDF, DOCX, or TXT).
+2. The system scans it locally for predefined threat-related keywords.
+3. It calculates a threat level based on keyword type and frequency.
+4. Displays results and allows you to export a PDF report.
 
 ---
 
-## 🛠️ Technology Stack
+## 🤝 Contributing & Collaboration
 
-- **Tooling:** Vite, Tailwind CSS  
-- **Frontend:** HTML5, CSS3, JavaScript (ES6+)  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB  
-- **Reporting:** html-pdf / Puppeteer
+We welcome feedback and contributions from developers and security researchers.
+
+- 💡 Suggest a feature  
+- 🐞 Report a bug  
+- 📘 Improve documentation  
+- 🤝 Collaborate on detection logic
+
+👉 Just open an [Issue](https://github.com/Amritanshu-404/ThtreatScope/issues) or submit a [Pull Request](https://github.com/Amritanshu-404/ThtreatScope/pulls).
 
 ---
 
-## 🏗️ Project Structure
+## 📬 Need Help?
 
+Reach out via:
+- 📧 Email: amritanshu.k@example.com  
+- 💬 [GitHub Discussions](https://github.com/Amritanshu-404/ThtreatScope/discussions)
+
+---
+
+## © 2025 Amritanshu Kumar
+
+Licensed under the MIT License.  
+Feel free to use and modify with attribution. All rights reserved.
+
+---
+
+_Stay Alert. Stay Secure. ThreatScope it. 🚀_
