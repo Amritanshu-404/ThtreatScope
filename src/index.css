@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Poppins", serif;
+}
+
+.Header {
+  button {
+    background: #01FF70;
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    padding: 12px;
+
+    a {
+      color: #181818;
+      font-family: "Sigmar", serif;
+      font-weight: 500;
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+
+  }
+}
+
+.UpperMain .Navbar {
+  font-family: "Sigmar", serif;
+  display: flex;
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  column-gap: 20px;
+  width: auto;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.SloganSection {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 100;
+  margin-top: 7rem;
+  width: 100%;
+  height: 20rem;
+
+  .Slogan {
+    margin-top: 80px;
+    min-width: 730px;
+    height: 300px;
+
+    h1 {
+      font-family: "Sigmar", serif;
+      font-size: 3.2rem;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    img {
+      width: 20px;
+    }
+  }
+
+  .Defender {
+    margin-top: 200px;
+    width: 95%;
+    z-index: 1;
+  }
+
+  .Criminal {
+    margin-right: 150px;
+    width: 95%;
+  }
+
+  p {
+    font-size: 1.9rem;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+}
+
+.InfoSection {
+  color: white;
+  width: 100%;
+  height: 500px;
+}
+
+.banner-container::before,
+.banner-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.banner-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.banner-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 5s linear infinite;
+}
+
+.process-card:nth-child(odd) {
+  transform: rotate(-1deg);
+}
+
+.process-card:nth-child(2) {
+  transform: rotate(1deg);
+}
+
+.process-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 255, 102, 0.3);
+}
+
+@media (max-width: 800px) {
+  .process-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.testimonial-text,
+.testimonial-user {
+  @apply transition-opacity duration-500 ease-in-out opacity-100;
+  margin-top: 20px;
+}
+
+.fade-out {
+  @apply opacity-0;
+}
+
+.fade-in {
+  @apply opacity-100;
+}
+
+.testimonial-text {
+  @apply px-4 py-2 italic text-xl text-[#1b1b1b] mx-12 max-h-72;
+}
+
+.testimonial-user {
+  @apply flex gap-4 mx-16 my-5;
+}
+
+.FactCard {
+  box-shadow:
+    0 4px 8px rgba(240, 240, 240, 0.8),
+    0 -4px 8px rgba(240, 240, 240, 0.8),
+    4px 0px 8px rgba(240, 240, 240, 0.8),
+    -4px 0px 8px rgba(240, 240, 240, 0.8),
+    inset 0 2px 4px rgba(220, 220, 220, 0.5),
+    inset 0 -2px 4px rgba(220, 220, 220, 0.5);
+  background-color: #FBFBFB;
+}
+
+.LoginSingup input {
+  border: 1px solid #e9ecef;
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
